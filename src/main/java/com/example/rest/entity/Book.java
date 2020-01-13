@@ -20,8 +20,7 @@ public class Book {
 
     @Column(name = "author")
     private String author;
-
-    // Book's description
+    
     @Column(name = "description")
     private String description;
 
