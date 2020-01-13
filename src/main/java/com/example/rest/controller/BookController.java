@@ -45,7 +45,6 @@ public class BookController {
 
     @PutMapping("/books/{id}")
     public Book updateBook(@PathVariable int id, @RequestBody Book book) {
-        // Get the book to update
         Book bookToUpdate = bookRepository.findById(id).get();
         bookToUpdate.setTitle(book.getTitle());
         bookToUpdate.setAuthor(book.getAuthor());
